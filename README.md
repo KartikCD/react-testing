@@ -20,6 +20,14 @@
 
 [List of matchers by React testing library](https://github.com/testing-library/jest-dom)
 
+### For more notes on roles
+
+clone repository and go cd to `rtl-notes` and run command
+
+```
+npx rtl-book serve roles-main-notes.js
+```
+
 ### Mocking
 
 - Mock = fake functions that doesn't do anything.
@@ -53,6 +61,12 @@ sometimes finding correct element with aria-roles becomes tricky. there are some
   const rows = container.querySelectorAll("tbody tr");
 ```
 
+3. To find buttons with emoji/svg use `aria-label`
+
 ### Some global functions
 
 1. `beforeEach()`: Jest is gonna run this arrow function before running individual test. This is great to do some initial setup.
+
+### Tips to find the component
+
+1. **By using accessible names**: Accessible name is basically the text within the element.
